@@ -21,6 +21,8 @@
   
       docker-compose up --build -d
       
+ ![compose](https://github.com/mithunvikram/nginx-docker/blob/master/docs/image1.png?raw=true"compose")     
+      
   Once that is done you will be able to see that a container has been created by giving this command
   
          docker ps -a
@@ -31,7 +33,9 @@
   
       docker compose up --build -d 
       
-   and the project will get build by itself and you changes will be seen in the browser. 
+   and the project will get build by itself and you changes will be seen in the browser.
+   
+   ![browser](https://github.com/mithunvikram/nginx-docker/blob/master/docs/image.png?raw=true"browser") 
    
 ### Nginx Config:<br/>
   For setting the path of the application is been done inside the default.conf file inside the nginx folder. In there we have mentioned the port which it needs to listen and the location for the index.html file of your angular application.
