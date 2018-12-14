@@ -31,6 +31,36 @@
   
       docker compose up --build -d 
       
-   and the project will get build by itself and you changes will be seen in the browser.
+   and the project will get build by itself and you changes will be seen in the browser. 
+   
+### Nginx Config:<br/>
+  For setting the path of the application is been done inside the default.conf file inside the nginx folder. In there we have mentioned the port which it needs to listen and the location for the index.html file of your angular application.
   
+      server {
+
+      listen 80;
+
+      sendfile on;
+
+      default_type application/octet-stream;
+
+
+      gzip on;
+      gzip_http_version 1.1;
+      gzip_disable      "MSIE [1-6]\.";
+      gzip_min_length   256;
+      gzip_vary         on;
+      gzip_proxied      expired no-cache no-store private auth;
+      gzip_types        text/plain text/css application/json application/javascript application/x-javascript text/xml         application/xml application/xml+rss text/javascript;
+      gzip_comp_level   9;
+
+
+      root /usr/share/nginx/html;
+
+
+      location / {
+       try_files $uri $uri/ /index.html =404;
+      }
+
+      }
          
