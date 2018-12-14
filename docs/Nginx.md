@@ -31,7 +31,7 @@
   
   Once the container is up you can connect by pointing the port number and you will be see the angular application which you have added in application in the browser. And if any change has been made to the component you just need to run the 
   
-      docker compose up --build -d 
+      docker-compose up --build -d 
       
    and the project will get build by itself and you changes will be seen in the browser.
    
