@@ -1,0 +1,244 @@
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+.custom-alert{
+    width: 85.5%;
+    margin-left: 7%
+  }
+
+  .page-no{
+    position: absolute!important;
+    margin-left: 2%!important;
+    margin-top: 1%!important;
+    color: rgba(0,0,0,.54);
+  }
+  
+/* .mat-input-underline {
+    display: none;
+  } */
+.mat-table{
+    max-height: unset !important;
+}
+/* .mat-select-panel:not([class*=mat-elevation-z]){
+    margin-top:35%!important
+} */
+.notify-icon{
+    font-size: 20px;
+    color: black;
+    float: right;
+    cursor: pointer;
+}  
+.mat-button-toggle-label{
+    width:100%;
+    height: 100%;
+}
+.container{
+    margin-top: -1%
+}
+
+.cdk-overlay-pane {
+    bottom: 43px !important; 
+    position: absolute !important;
+}
+.cdk-global-overlay-wrapper, .cdk-overlay-container {
+    z-index: 99999 !important;
+ }
+ .mat-tooltip {
+    /* your own custom styles here */ 
+    /* e.g. */
+    color: white !important;
+    max-width: 1000px !important;
+    border-radius: 25px;
+    font-size: medium;
+    /* background-color: red !important; */
+  }
+.mat-icon{
+    display: none !important;
+  }
+.mat-horizontal-stepper-header{
+    pointer-events: none !important;
+}
+.title {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 36px;
+    color:"#000033";
+}
+
+
+.mat-horizontal-stepper-header .mat-step-icon, .mat-horizontal-stepper-header .mat-step-icon-not-touched {
+    margin-right: -48px !important;
+    flex: none;
+}
+
+
+@media only screen and (max-width: 800px) {
+    .mat-paginator-page-size {
+        margin-right: 0px !important;
+    }   
+  }
+  
+  @media only screen and (min-width:800px) and (max-width: 1024px) {
+    .mat-paginator-page-size {
+        margin-right: 48% !important;
+    }
+        
+  }
+  
+  @media only screen and (width: 768px) {
+    .mat-paginator-page-size {
+        margin-right: 36% !important;
+    }   
+  }
+ 
+  
+@media only screen and (max-width:420px) {
+    .bell {
+        -webkit-appearance: none;
+        border-radius: none;
+    }
+
+    .cdk-overlay-pane {
+        width: 80% !important;
+    }
+
+    .dateForm .mat-form-field-infix {
+        width: 140px !important;
+    }
+
+    .main {
+        margin-top: 65px !important;
+    }
+
+    .mat-card {
+        margin: 10px 0;
+    }
+
+    .mat-form-field {
+        display: inline !important;
+    }
+
+    .mat-header-cell {
+        text-align: center !important;
+    }
+
+    .mat-paginator-container {
+        justify-content: center !important;
+    }
+
+    .mat-select-trigger {
+        text-align: center !important;
+    }
+
+    .mat-sort-header-container {
+        justify-content: center;
+    }
+
+    .mat-table .element-row {
+        text-align: center !important;
+    }
+
+    .navbar {
+        align-items: center;
+        justify-content: center;
+        position: fixed !important;
+        top: 0;
+        width: 100%;
+        z-index: 1;
+    }
+
+    .navbar-header {
+        align-items: center;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .navbar-header .head-logo {
+        position: relative !important;
+        left: 0 !important;
+    }
+
+    .navbar .navbar-toggle,
+    .navbar .bell {
+        display: flex;
+        align-items: center;
+        background: #DDDDDD;
+        border-radius: 0 !important;
+        border: 1px solid #888;
+        color: white;
+        font-size: 25px !important;
+        justify-content: center;
+        height: 40px;
+        left: 0 !important;
+        margin-top: 0 !important;
+        position: relative !important;
+        width: 40px;
+        -webkit-appearance: none;
+    }
+
+    .navbar .navbar-toggle:hover,
+    .navbar .bell:hover,
+    .navbar .navbar-toggle:active,
+    .navbar .bell:active,
+    .navbar .navbar-toggle:focus,
+    .navbar .bell:focus {
+        background: #999;
+    }
+
+    .searchbar .filterName {
+        line-height: 35px;
+    }
+
+    .searchbar .mat-form-field-infix {
+        padding: 0 !important;
+        text-align: left;
+    }
+    
+    .searchbar .ng-star-inserted,
+    .searchbar .mat-select {
+        margin: 10px 0;
+    }
+    
+    .searchbar .pull-right {
+        margin-left: 0 !important;
+    }
+
+    .searchbar>:first-child {
+        align-items: center;
+        border-bottom: 1px solid #ccc;
+        display: flex;
+        font-size: 18px;
+        justify-content: center;
+        margin-top: 10px !important;
+        padding: 10px 0;
+    }
+
+    .searchbar>:first-child input {
+        margin-top: 0;
+        margin-left: 10px;
+        width: 100%;
+    }
+
+    .spinner {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .spinner .lds-roller {
+        left: 0 !important;
+        top: 0 !important;
+    }
+
+    .textAreaDiv .mat-form-field-label {
+        white-space: normal !important;
+    }
+
+    .text-center {
+        margin-left: 0 !important;
+    }
+
+    .ticket-container {
+        overflow-y: scroll;
+    }
+}
