@@ -1,7 +1,7 @@
 ![Logo](https://github.com/mithunvikram/nginx-docker/blob/master/docs/GeppettoIcon.png?raw=true"Logo")
 
 # Docker With Nginx<br/>
-   In here we will see how to containerize Nginx in Docker with volumes for the purpose of the creating a back up floder to store the data in case if the container gets crashed or deleted.
+   Here we will see how to containerize Nginx in Docker with volumes for the purpose of the creating a back up floder to store the data in case if the container gets crashed or deleted.
    
 # Content
 1. [Prerequisites](#prerequisites)
@@ -12,11 +12,11 @@
 1. [Install docker compose](https://docs.docker.com/compose/install/)
 
 ### Setup Nginx with Docker:<br/>
-  In here we will see how to containerize nginx with docker. Nginx is used for load balancing and for deployment purpose. 
+  Here we will see how to containerize nginx with docker. Nginx is used for load balancing and for deployment purpose. 
   
-  In here to start nginx in docker and deploy your angular application you need to clone the code from this repo because we have created a folder as application where you need to put you code inside the application so when you run the docker file and docker compose file it will look into application for the code.
+  To start nginx in docker and deploy your angular application you need to clone the code from this repo because we have created a folder as "Dist" where you need to put your artifacts inside the dist folder so when you run the docker-compose.yml file it will look into dist folder.
   
-  Once you have added the code inside the application you need to run the [Docker compose file](https://github.com/mithunvikram/nginx-docker/blob/master/docs/docker-compose.yml) by giving this command
+  Once you have added the artifacts inside the dist you need to run the [Docker compose file](https://github.com/mithunvikram/nginx-docker/blob/master/docs/docker-compose.yml) by giving this command
   
       docker-compose up --build -d
       
@@ -37,7 +37,7 @@
    ![browser](https://github.com/mithunvikram/nginx-docker/blob/master/docs/image.png?raw=true"browser") 
    
 ### Nginx Config:<br/>
-  For setting the path of the application is been done inside the default.conf file inside the nginx folder. In there we have mentioned the port which it needs to listen and the location for the index.html file of your angular application.
+  For setting the path of the application is been done inside the default.conf file inside the nginx_config folder. In there we have mentioned the port which it needs to listen and the location for the index.html file of your angular application.
   
       server {
 
