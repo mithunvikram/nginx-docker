@@ -1,16 +1,11 @@
-version: '3'
-services:
-  web:
-   build: .
-   container_name: gepnignx
-   ports:
-    - 8877:80
-   volumes:
-    - nginx_vol_config:/etc/nginx/conf.d/
-   networks:
-    - nginx_net
-
-volumes:
-  nginx_vol_config:
-networks:
-  nginx_net:
+web:
+  image: nginx
+  container_name: nginx_container
+  volumes:
+   - ./nginx:/etc/nginx/conf.d/
+   - ./dist:/usr/share/nginx/html
+  ports:
+   - "8001:80"
+  environment:
+   - NGINX_HOST=localhost
+   - NGINX_PORT=80
