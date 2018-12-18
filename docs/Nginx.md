@@ -24,7 +24,7 @@
       
   Once that is done you will be able to see that a container has been created by giving this command
   
-        docker ps -a
+      docker ps -a
          
   in there you will be able to see that the container is created.
   
