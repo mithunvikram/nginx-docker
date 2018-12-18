@@ -1,0 +1,11 @@
+web:
+  image: nginx
+  container_name: nginx_container
+  volumes:
+   - ./nginx:/etc/nginx/conf.d/
+   - ./dist:/usr/share/nginx/html
+  ports:
+   - "8001:80"
+  environment:
+   - NGINX_HOST=localhost
+   - NGINX_PORT=80
