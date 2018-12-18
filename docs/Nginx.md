@@ -16,7 +16,7 @@
   
   To start nginx in docker and deploy your angular application you need to clone the code from this repo because we have created a folder as "Dist" where you need to put your artifacts inside the dist folder so when you run the docker-compose.yml file it will look into dist folder.
   
-  Once you have added the artifacts inside the dist you need to run the [Docker compose file](https://github.com/mithunvikram/nginx-docker/blob/master/docs/docker-compose.yml) by giving this command
+  Once you have added the artifacts inside the dist you need to run the [docker-compose.yml](https://github.com/mithunvikram/nginx-docker/blob/master/docs/docker-compose.yml) by giving this command
   
       docker-compose up --build -d
       
