@@ -5,8 +5,7 @@
    
 # Content
 1. [Prerequisites](#prerequisites)
-1. [Docker File]()
-1. [Docker compose File]()
+1. [Docker Compose File]()
 
 # Prerequisites
 1. [Install docker](https://docs.docker.com/install/)<br/>
@@ -17,7 +16,7 @@
   
   In here to start nginx in docker and deploy your angular application you need to clone the code from this repo because we have created a folder as application where you need to put you code inside the application so when you run the docker file and docker compose file it will look into application for the code.
   
-  Once you have added the code inside the application you need to run the [Docker file](https://github.com/mithunvikram/nginx-docker/blob/master/docs/Dockerfile) and [Docker compose file](https://github.com/mithunvikram/nginx-docker/blob/master/docs/docker-compose.yml) by giving this command
+  Once you have added the code inside the application you need to run the [Docker compose file](https://github.com/mithunvikram/nginx-docker/blob/master/docs/docker-compose.yml) by giving this command
   
       docker-compose up --build -d
       
@@ -25,7 +24,7 @@
       
   Once that is done you will be able to see that a container has been created by giving this command
   
-         docker ps -a
+        docker ps -a
          
   in there you will be able to see that the container is created.
   
@@ -47,7 +46,6 @@
       sendfile on;
 
       default_type application/octet-stream;
-
 
       gzip on;
       gzip_http_version 1.1;
