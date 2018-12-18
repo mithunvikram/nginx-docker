@@ -21,7 +21,7 @@
   
       docker-compose up --build -d
       
- ![compose](https://github.com/mithunvikram/nginx-docker/blob/master/docs/image02.png?raw=true"compose")     
+ ![compose](https://github.com/mithunvikram/nginx-docker/blob/master/docs/image03.png?raw=true"compose")     
       
   Once that is done you will be able to see that a container has been created by giving this command
   
