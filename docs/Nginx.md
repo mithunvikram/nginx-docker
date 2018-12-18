@@ -28,7 +28,7 @@
          
   in there you will be able to see that the container is created.
   
-  Once the container is up you can connect by pointing the port number and you will be see the angular application which you have added in application in the browser. And if any change has been made to the component you just need to run the 
+  Once the container is up you can connect by pointing the port number and you will be see the angular application which you have added in application in the browser.And if any change in application just replace existing artifacts with newly created artifacts in dist folder and just need to run this command,
   
       docker-compose up --build -d 
       
