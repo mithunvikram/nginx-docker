@@ -26,6 +26,8 @@
   Once that is done you will be able to see that a container has been created by giving this command
   
       docker ps -a
+      
+  ![container](https://github.com/mithunvikram/nginx-docker/blob/master/docs/image4.png?raw=true"container")
          
   in there you will be able to see that the container is created.
   
