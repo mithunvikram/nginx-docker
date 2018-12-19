@@ -5,8 +5,8 @@
    
 # Content
 1. [Prerequisites](#prerequisites)
-1. [Dockerfile]()
-1. [Docker Compose File]()
+1. [Dockerfile](https://github.com/mithunvikram/nginx-docker/blob/master/Dockerfile)
+1. [Docker Compose File](https://github.com/mithunvikram/nginx-docker/blob/master/docker-compose.yml)
 
 # Prerequisites
 1. [Install docker](https://docs.docker.com/install/)<br/>
