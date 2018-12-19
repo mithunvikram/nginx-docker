@@ -1,7 +1,7 @@
 ![Logo](https://github.com/mithunvikram/nginx-docker/blob/master/docs/GeppettoIcon.png?raw=true"Logo")
 
 # Docker With Nginx<br/>
-   Here we will see how to containerize Nginx in Docker with volumes for the purpose of the creating a back up folder to store the data in case if the container gets crashed or deleted.
+   Here we will see how to containerize Nginx in Docker to deploy an web application.
    
 # Content
 1. [Prerequisites](#prerequisites)
