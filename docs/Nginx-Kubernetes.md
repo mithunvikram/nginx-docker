@@ -1,7 +1,7 @@
 ![Logo](https://github.com/mithunvikram/nginx-docker/blob/master/docs/GeppettoIcon.png?raw=true"Logo")
 
 # Nginx with Kubernetes<br/>
-   In here we will see how to containerized Nginx is setuped on Top of a Kubernetes Cluster.
+   In here we will see how to containerized Nginx is setup on Top of a Kubernetes Cluster.
    
 # Content
 1. [Prerequisites](#prerequisites)
@@ -18,7 +18,7 @@
 The Kubernetes is an open source containers orchestration tool,i.e ability to deploy, scale, and operate with multiple containers from one place.
 
 ### Setting up Kubernetes:<br/>
-  To run Kubernetes first you need to setup a VM usng the following command
+  To run Kubernetes first you need to setup a VM using the following command
    
     $ sudo apt install virtualbox virtualbox-ext-pack 
             
@@ -27,7 +27,7 @@ The Kubernetes is an open source containers orchestration tool,i.e ability to de
     $ curl -Lo minikube https://storage.googleapis.com/minikube/releases/v0.31.0/minikube-linux-amd64 && chmod +x  minikube && sudo cp minikube /usr/local/bin/ && rm minikube
     $ minikube start
             
- Once your setuped with minikube need to install kubectl which is the Kubernetes CLI:
+ Once you done setup with minikube need to install kubectl which is the Kubernetes CLI:
 
     $ sudo apt-get update && sudo apt-get install -y apt-transport-https
     $ curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key add -
@@ -35,7 +35,7 @@ The Kubernetes is an open source containers orchestration tool,i.e ability to de
     $ sudo apt-get update
     $ sudo apt-get install -y kubectl
 
- Thats it! Now you have setuped Kubernetes.
+ Thats it! Now your Kubernetes is ready.
  
   # Nginx Setup<br/>
    Create a [Dockerfile](https://github.com/mithunvikram/nginx-docker/blob/master/Dockerfile) for nginx and build the image.The first command enters the into the minikube VM.
@@ -65,7 +65,7 @@ The Kubernetes is an open source containers orchestration tool,i.e ability to de
   ![Image1](https://github.com/mithunvikram/nginx-docker/blob/master/docs/img9.png?raw=true"Image1")
   
  
- Now to open the Nginx that is setuped using kubernetes
+ Now to open the Nginx using kubernetes
   find the services in kubernetes using command:
   
      $ kubectl get service
