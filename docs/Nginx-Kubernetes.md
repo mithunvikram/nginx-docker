@@ -72,13 +72,13 @@ The Kubernetes is an open source containers orchestration tool,i.e ability to de
      
    you will find the jenkins service that you have created, get the port number in which the service is running
    
-   ![Image2](https://github.com/TharaniRajan/Jenkins-Docker/blob/master/docs/kub-service.png?raw=true"Image2")
+   ![Image2](https://github.com/mithunvikram/nginx-docker/blob/master/docs/img8.png?raw=true"Image2")
    
  Next to get IP of the Kubernetes cluster using:
  
       $ minikube ip
  
- Thats it! now you got the IP and Port of the Kubernetes cluster in which the Nginx is      running(example:http://192.168.99.100:30886):
+ Thats it! now you got the IP and Port of the Kubernetes cluster in which the Nginx is      running(example:http://192.168.99.100:32053):
  If you open this in browser you will see the jenkins:
                              
-   ![Image3](https://github.com/TharaniRajan/Jenkins-Docker/blob/master/docs/kub_jenkins.png?raw=true"Image3")
+   ![Image3](https://github.com/mithunvikram/nginx-docker/blob/master/docs/im79.png?raw=true"Image3")
