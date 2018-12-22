@@ -9,8 +9,8 @@
 1. [Nginx](#nginx)
 
 # Prerequisites
-1. [Docker]<br/>
-1. [Virtual Machine]
-1. [Minikube]
-1. [Kubernetes CLI]
+1. [Docker](https://docs.docker.com/install/)<br/>
+1. [Virtual Machine](https://www.virtualbox.org/wiki/Downloads)<br/>
+1. [Minikube](https://kubernetes.io/docs/tasks/tools/install-minikube/)<br/>
+1. [Kubernetes CLI](https://kubernetes.io/docs/tasks/tools/install-kubectl/)<br/>
 
