@@ -6,7 +6,7 @@
 # Content
 1. [Prerequisites](#prerequisites)
 1. [Kubernetes Setup](#kubernetes-setup)
-1. [Nginx](#nginx)
+1. [Nginx](#nginx-setup)
 
 # Prerequisites
 1. [Docker](https://docs.docker.com/install/)<br/>
@@ -81,4 +81,4 @@ The Kubernetes is an open source containers orchestration tool,i.e ability to de
  Thats it! now you got the IP and Port of the Kubernetes cluster in which the Nginx is      running(example:http://192.168.99.100:32053):
  If you open this in browser you will see the jenkins:
                              
-   ![Image3](https://github.com/mithunvikram/nginx-docker/blob/master/docs/im79.png?raw=true"Image3")
+   ![Image3](https://github.com/mithunvikram/nginx-docker/blob/master/docs/img7.png?raw=true"Image3")
