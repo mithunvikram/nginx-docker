@@ -59,10 +59,12 @@
       gzip_types        text/plain text/css application/json application/javascript application/x-javascript text/xml         application/xml application/xml+rss text/javascript;
       gzip_comp_level   9;
 
-      location / {
       root /usr/share/nginx/html;
       index index.html index.htm;
+      
+      location / {
+      try_files $uri $uri/ /index.html;
       }
 
-      }
+     }
          
