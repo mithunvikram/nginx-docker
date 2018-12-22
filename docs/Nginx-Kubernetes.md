@@ -5,8 +5,8 @@
    
 # Content
 1. [Prerequisites](#prerequisites)
-1. [Kubernetes]
-1. [Nginx]
+1. [Kubernetes](#kubernetes)
+1. [Nginx](#nginx)
 
 # Prerequisites
 1. [Docker]<br/>
