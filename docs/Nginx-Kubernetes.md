@@ -5,7 +5,7 @@
    
 # Content
 1. [Prerequisites](#prerequisites)
-1. [Kubernetes Setup](#kubernetessetup)
+1. [Kubernetes Setup](#kubernetes-setup)
 1. [Nginx](#nginx)
 
 # Prerequisites
