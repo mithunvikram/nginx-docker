@@ -2,4 +2,4 @@
 
 # Content 
 1. [Nginx](Nginx.md)
-2. [Nginx-Kubernetes](NginxKubernetes.md)
+2. [Nginx-Kubernetes](Nginx-Kubernetes.md)
