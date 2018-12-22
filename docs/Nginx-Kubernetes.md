@@ -60,7 +60,7 @@ The Kubernetes is an open source containers orchestration tool,i.e ability to de
   Now we can open the Minikube Dashboard using:
      
      $ minikube dashboard
-  you can able to see browser opens with the minikube Kubernetes Dashboard with Jenkins Pod.  
+  you can able to see browser opens with the minikube Kubernetes Dashboard with Nginx Pod.  
   
   ![Image1](https://github.com/mithunvikram/nginx-docker/blob/master/docs/img9.png?raw=true"Image1")
   
