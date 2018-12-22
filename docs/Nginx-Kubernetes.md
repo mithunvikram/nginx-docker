@@ -70,7 +70,7 @@ The Kubernetes is an open source containers orchestration tool,i.e ability to de
   
      $ kubectl get service
      
-   you will find the jenkins service that you have created, get the port number in which the service is running
+   you will find the nginx service that you have created, get the port number in which the service is running
    
    ![Image2](https://github.com/mithunvikram/nginx-docker/blob/master/docs/img8.png?raw=true"Image2")
    
@@ -79,6 +79,6 @@ The Kubernetes is an open source containers orchestration tool,i.e ability to de
       $ minikube ip
  
  Thats it! now you got the IP and Port of the Kubernetes cluster in which the Nginx is      running(example:http://192.168.99.100:32053):
- If you open this in browser you will see the jenkins:
+ If you open this in browser you will see the Nginx with grapejs in minikube:
                              
    ![Image3](https://github.com/mithunvikram/nginx-docker/blob/master/docs/img7.png?raw=true"Image3")
