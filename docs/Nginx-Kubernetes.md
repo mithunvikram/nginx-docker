@@ -16,3 +16,23 @@
 
 # Kubernetes Setup
 The Kubernetes is an open source containers orchestration tool,i.e ability to deploy, scale, and operate with multiple containers from one place.
+
+### Setting up Kubernetes:<br/>
+  To run Kubernetes first you need to setup a VM usng the following command
+   
+    $ sudo apt install virtualbox virtualbox-ext-pack 
+            
+  After this need to install Minikube which runs Kubernetes in your local machine.
+ 
+    $ curl -Lo minikube https://storage.googleapis.com/minikube/releases/v0.31.0/minikube-linux-amd64 && chmod +x  minikube && sudo cp minikube /usr/local/bin/ && rm minikube
+    $ minikube start
+            
+ Once your setuped with minikube need to install kubectl which is the Kubernetes CLI:
+
+    $ sudo apt-get update && sudo apt-get install -y apt-transport-https
+    $ curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key add -
+    $ echo "deb https://apt.kubernetes.io/ kubernetes-xenial main" | sudo tee -a /etc/apt/sources.list.d/kubernetes.list
+    $ sudo apt-get update
+    $ sudo apt-get install -y kubectl
+
+ Thats it! Now you have setuped Kubernetes.
