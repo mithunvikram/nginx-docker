@@ -55,7 +55,9 @@
 # Step 1: Create Your Amazon EKS Cluster
 
    1.Open the Amazon EKS console at https://console.aws.amazon.com/eks/home#/clusters.
+   
    2.Choose Create cluster.
+   
    3.On the Create cluster page, fill in the following fields and then choose Create:
 
       Cluster name: A unique name for your cluster.
@@ -66,6 +68,7 @@
       Security Groups: The SecurityGroups value from the AWS CloudFormation output that you generated with Create your Amazon EKS Cluster VPC. This security group has ControlPlaneSecurityGroup in the drop-down name.
       
    4.On the Clusters page, choose the name of your newly created cluster to view the cluster information.
+   
    5.The Status field shows CREATING until the cluster provisioning process completes.
    
  # To create your cluster with the AWS CLI
