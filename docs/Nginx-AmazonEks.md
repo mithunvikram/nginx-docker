@@ -10,9 +10,9 @@
 
 # Prerequisites
 1. [Docker](https://docs.docker.com/install/)<br/>
-1. [Virtual Machine](https://www.virtualbox.org/wiki/Downloads)<br/>
-1. [Minikube](https://kubernetes.io/docs/tasks/tools/install-minikube/)<br/>
 1. [Kubernetes CLI](https://kubernetes.io/docs/tasks/tools/install-kubectl/)<br/>
+1. [AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-install.html)<br/>
+
 
 # Kubernetes Setup
 The Kubernetes is an open source containers orchestration tool,i.e ability to deploy, scale, and operate with multiple containers from one place.
