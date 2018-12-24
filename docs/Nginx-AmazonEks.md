@@ -129,7 +129,15 @@ To launch your worker nodes
 
    10.When your stack has finished creating, select it in the console and choose the Outputs tab.
 
-   11.Record the NodeInstanceRole for the node group that was created. You need this when you configure your Amazon EKS worker nodes
+   11.Record the NodeInstanceRole for the node group that was created. You need this when you configure your Amazon EKS worker nodes.
+   
+   # To enable worker nodes to join your cluster
+   
+   1.Download, edit, and apply the AWS authenticator configuration map:
+
+   a.Download the configuration map.
+   
+     curl -O https://amazon-eks.s3-us-west-2.amazonaws.com/cloudformation/2018-12-10/aws-auth-cm.yaml
 
 
 
