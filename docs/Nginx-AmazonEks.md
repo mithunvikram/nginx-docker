@@ -161,3 +161,23 @@ To launch your worker nodes
    2.Watch the status of your nodes and wait for them to reach the Ready status.
    
       kubectl get nodes --watch
+      
+      
+# Nginx with Amazon Eks
+  
+   Make sure you have pushed your docker image of nginx with your app in Docker hub.Login to your ec2 instance with pem file through ssh.
+    Create a [nginx-deployment.yaml](https://github.com/mithunvikram/nginx-docker/blob/master/docs/nginx-deployment.yaml) file, Let’s install the just created deployment into our Kubernetes cluster by using the specified command:
+  
+     $ kubectl apply -f nginx-deployment.yaml
+     
+  In addition to pod creation via deployment, we need to create the Nginx service. The reason behind this is simple. To       interact with a pod inside the Kubernetes cluster   
+  
+  Create a [nginx-service.yaml](https://github.com/mithunvikram/nginx-docker/blob/master/docs/nginx-service.yaml) file,  you can run it inside the Kubernetes container by using this command:
+      
+     $ kubectl apply -f nginx-service.yaml
+     
+ Query the services in your cluster and wait until the External IP column for the nginx service is populated.
+
+     $ kubectl get services -o wide
+
+After your external IP address is available, point a web browser to that address at port 80 to view your nginx. For example, http://a7a95c2b9e69711e7b1a3022fdcfdf2e-1985673473.us-west-2.elb.amazonaws.com:80
