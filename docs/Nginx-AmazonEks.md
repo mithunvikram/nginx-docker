@@ -12,8 +12,15 @@
 1. [Docker](https://docs.docker.com/install/)<br/>
 1. [Kubernetes CLI](https://kubernetes.io/docs/tasks/tools/install-kubectl/)<br/>
 1. [AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-install.html)<br/>
+1. [Create your Amazon EKS Service Role]
 
+Create your Amazon EKS Service Role
+To create your Amazon EKS service role in the IAM console,
 
-# Kubernetes Setup
-The Kubernetes is an open source containers orchestration tool,i.e ability to deploy, scale, and operate with multiple containers from one place.
+1.Open the IAM console at https://console.aws.amazon.com/iam/.
+2.Choose Roles, then Create role.
+3.Choose EKS from the list of services, then Allows Amazon EKS to manage your clusters on your behalf for your use case, then     Next: Permissions.
+4.Choose Next: Review.
+5.For Role name, enter a unique name for your role, such as eksServiceRole, then choose Create role.
+
 
