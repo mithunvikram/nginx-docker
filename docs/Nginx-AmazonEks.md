@@ -139,5 +139,17 @@ To launch your worker nodes
    
      curl -O https://amazon-eks.s3-us-west-2.amazonaws.com/cloudformation/2018-12-10/aws-auth-cm.yaml
 
-
-
+   b.Open the file with your favorite text editor. Replace the <ARN of instance role (not instance profile)> snippet with the NodeInstanceRole value that you recorded in the previous procedure, and save the file.
+   
+    apiVersion: v1
+    kind: ConfigMap
+    metadata:
+      name: aws-auth
+      namespace: kube-system
+    data:
+      mapRoles: |
+        - rolearn: <ARN of instance role (not instance profile)>
+          username: system:node:{{EC2PrivateDNSName}}
+          groups:
+            - system:bootstrappers
+            - system:nodes
