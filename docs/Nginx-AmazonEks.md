@@ -15,13 +15,13 @@
 1. [Create your Amazon EKS Service Role]
 
 # Create your Amazon EKS Service Role
-To create your Amazon EKS service role in the IAM console,
+   To create your Amazon EKS service role in the IAM console,
 
-1.Open the IAM console at https://console.aws.amazon.com/iam/. 
-2.Choose Roles, then Create role.
-3.Choose EKS from the list of services, then Allows Amazon EKS to manage your clusters on your behalf for your use case, thenNext: Permissions.<br/>
-4.Choose Next: Review.<br/>
-5.For Role name, enter a unique name for your role, such as eksServiceRole, then choose Create role.<br/>
+      1.Open the IAM console at https://console.aws.amazon.com/iam/. 
+      2.Choose Roles, then Create role.
+      3.Choose EKS from the list of services, then Allows Amazon EKS to manage your clusters on your behalf for your use case, thenNext: Permissions.<br/>
+      4.Choose Next: Review.<br/>
+      5.For Role name, enter a unique name for your role, such as eksServiceRole, then choose Create role.<br/>
 
 # Create your Amazon EKS Cluster VPC
 To create your cluster VPC 
