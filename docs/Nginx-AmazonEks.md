@@ -14,7 +14,7 @@
 1. [AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-install.html)<br/>
 
 
-# Follow the steps in this link to create EKS Service role and AWS config,
+# Follow the steps in this link to create Amazon EKS Service role and AWS config,
  
    https://docs.aws.amazon.com/eks/latest/userguide/getting-started.html
 
