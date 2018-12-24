@@ -59,6 +59,11 @@
        11.Record the VpcId for the subnets that were created. You need this when you launch your worker node group template.
        12.Record the SubnetIds for the subnets that were created. You need this when you create your EKS cluster; these are the subnets that your worker nodes are launched into.
        
+# Install and Configure kubectl for Amazon EKS
+   Kubernetes uses a command-line utility called kubectl for communicating with the cluster API server. Amazon EKS clusters also require the AWS IAM Authenticator for Kubernetes to allow IAM authentication for your Kubernetes cluster. Beginning with Kubernetes version 1.10, you can configure the kubectl client to work with Amazon EKS by installing the AWS IAM Authenticator for Kubernetes and modifying your kubectl configuration file to use it for authentication.
+
+   Amazon EKS vends aws-iam-authenticator binaries that you can use that are identical to the upstream aws-iam-authenticator binaries with the same version. Alternatively, you can use go get to fetch the binary from the AWS IAM Authenticator for Kubernetes project on GitHub.
+       
 # To install kubectl for Amazon EKS
 
    You have multiple options to download and install kubectl for your operating system.
