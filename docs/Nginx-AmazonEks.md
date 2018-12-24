@@ -24,23 +24,23 @@
       5.For Role name, enter a unique name for your role, such as eksServiceRole, then choose Create role.
 
 # Create your Amazon EKS Cluster VPC
- To create your cluster VPC 
-    1.Open the AWS CloudFormation console at https://console.aws.amazon.com/cloudformation.
-    2.From the navigation bar, select a Region that supports Amazon EKS.
+   To create your cluster VPC 
+      1.Open the AWS CloudFormation console at https://console.aws.amazon.com/cloudformation.
+      2.From the navigation bar, select a Region that supports Amazon EKS.
       Note:
       Amazon EKS is available in the following Regions at this time:
-        US West (Oregon) (us-west-2)
-        US East (N. Virginia) (us-east-1)
-        US East (Ohio) (us-east-2)
-        EU (Frankfurt) (eu-central-1)
-        EU (Stockholm) (eu-north-1)
-        EU (Ireland) (eu-west-1)
-        Asia Pacific (Tokyo) (ap-northeast-1)
-        Asia Pacific (Singapore) (ap-southeast-1)
-        Asia Pacific (Sydney) (ap-southeast-2)
-    3.Choose Create stack.
-    4.For Choose a template, select Specify an Amazon S3 template URL.
-    5.Paste the following URL into the text area and choose Next:
+         US West (Oregon) (us-west-2)
+         US East (N. Virginia) (us-east-1)
+         US East (Ohio) (us-east-2)
+         EU (Frankfurt) (eu-central-1)
+         EU (Stockholm) (eu-north-1)
+         EU (Ireland) (eu-west-1)
+         Asia Pacific (Tokyo) (ap-northeast-1)
+         Asia Pacific (Singapore) (ap-southeast-1)
+         Asia Pacific (Sydney) (ap-southeast-2)
+      3.Choose Create stack.
+      4.For Choose a template, select Specify an Amazon S3 template URL.
+      5.Paste the following URL into the text area and choose Next:
    
     $ https://amazon-eks.s3-us-west-2.amazonaws.com/cloudformation/2018-12-10/amazon-eks-vpc-sample.yaml
     
