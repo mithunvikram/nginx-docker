@@ -84,6 +84,22 @@
    Create your cluster with the following command. Substitute your cluster name, the Amazon Resource Name (ARN) of your Amazon EKS service role that you created in Create your Amazon EKS Service Role, and the subnet and security group IDs for the VPC that you created in Create your Amazon EKS Cluster VPC.
      
     aws eks create-cluster --name devel --role-arn arn:aws:iam::111122223333:role/eks-service-role-AWSServiceRoleForAmazonEKS-EXAMPLEBKZRQR --resources-vpc-config subnetIds=subnet-a9189fe2,subnet-50432629,securityGroupIds=sg-f5c54184
+    
+  # Step 2: Configure kubectl for Amazon EKS
+  
+  1.Use the AWS CLI update-kubeconfig command to create or update your kubeconfig for your cluster.
+
+  By default, the resulting configuration file is created at the default kubeconfig path (.kube/config) in your home directory or merged with an existing kubeconfig at that location. You can specify another path with the --kubeconfig option.
+
+You can specify an IAM role ARN with the --role-arn option to use for authentication when you issue kubectl commands. Otherwise, the IAM entity in your default AWS CLI or SDK credential chain is used. You can view your default AWS CLI or SDK identity by running the aws sts get-caller-identity command.
+
+For more information, see the help page with the aws eks update-kubeconfig help command or see update-kubeconfig in the AWS CLI Command Reference.
+
+     aws eks update-kubeconfig --name cluster_name
+     
+  2.Test your configuration.
+  
+     kubectl get svc
 
 
 
