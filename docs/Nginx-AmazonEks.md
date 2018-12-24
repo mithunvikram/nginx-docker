@@ -14,14 +14,11 @@
 1. [AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-install.html)<br/>
 1. [Create your Amazon EKS Service Role]
 
-# Create your Amazon EKS Service Role
-   To create your Amazon EKS service role in the IAM console,
 
-      1.Open the IAM console at https://console.aws.amazon.com/iam/. 
-      2.Choose Roles, then Create role.
-      3.Choose EKS from the list of services, then Allows Amazon EKS to manage your clusters on your behalf for your use case, then Next: Permissions.
-      4.Choose Next: Review.
-      5.For Role name, enter a unique name for your role, such as eksServiceRole, then choose Create role.
+# Follow the steps in this link to create EKS Service role and AWS config,
+ 
+   https://docs.aws.amazon.com/eks/latest/userguide/getting-started.html
+
 
 # Create your Amazon EKS Cluster VPC
    To create your cluster VPC 
@@ -59,11 +56,6 @@
        11.Record the VpcId for the subnets that were created. You need this when you launch your worker node group template.
        12.Record the SubnetIds for the subnets that were created. You need this when you create your EKS cluster; these are the subnets that your worker nodes are launched into.
        
-# Install and Configure kubectl for Amazon EKS
-   Kubernetes uses a command-line utility called kubectl for communicating with the cluster API server. Amazon EKS clusters also require the AWS IAM Authenticator for Kubernetes to allow IAM authentication for your Kubernetes cluster. Beginning with Kubernetes version 1.10, you can configure the kubectl client to work with Amazon EKS by installing the AWS IAM Authenticator for Kubernetes and modifying your kubectl configuration file to use it for authentication.
-
-   Amazon EKS vends aws-iam-authenticator binaries that you can use that are identical to the upstream aws-iam-authenticator binaries with the same version. Alternatively, you can use go get to fetch the binary from the AWS IAM Authenticator for Kubernetes project on GitHub.
-       
 # To install kubectl for Amazon EKS
 
    You have multiple options to download and install kubectl for your operating system.
@@ -81,9 +73,9 @@
    To download and install the Amazon EKS-vended aws-iam-authenticator binary:
    1.Download the Amazon EKS-vended aws-iam-authenticator binary from Amazon S3:
 
-        Linux: [https://amazon-eks.s3-us-west-2.amazonaws.com/1.11.5/2018-12-06/bin/linux/amd64/aws-iam-authenticator](https://amazon-eks.s3-us-west-2.amazonaws.com/1.11.5/2018-12-06/bin/linux/amd64/aws-iam-authenticator)
-        MacOS: https://amazon-eks.s3-us-west-2.amazonaws.com/1.11.5/2018-12-06/bin/darwin/amd64/aws-iam-authenticator   
-        Windows: https://amazon-eks.s3-us-west-2.amazonaws.com/1.11.5/2018-12-06/bin/windows/amd64/aws-iam-authenticator.exe
+   Linux: [https://amazon-eks.s3-us-west-2.amazonaws.com/1.11.5/2018-12-06/bin/linux/amd64/aws-iam-authenticator](https://amazon-eks.s3-us-west-2.amazonaws.com/1.11.5/2018-12-06/bin/linux/amd64/aws-iam-authenticator)
+   MacOS: [https://amazon-eks.s3-us-west-2.amazonaws.com/1.11.5/2018-12-06/bin/darwin/amd64/aws-iam-authenticator](https://amazon-eks.s3-us-west-2.amazonaws.com/1.11.5/2018-12-06/bin/darwin/amd64/aws-iam-authenticator)   
+   Windows: [https://amazon-eks.s3-us-west-2.amazonaws.com/1.11.5/2018-12-06/bin/windows/amd64/aws-iam-authenticator.exe]()
 
    Use the command below to download the binary, substituting the correct URL for your platform. The example below is for macOS clients.
    
