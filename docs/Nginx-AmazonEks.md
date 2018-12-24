@@ -12,7 +12,6 @@
 1. [Docker](https://docs.docker.com/install/)<br/>
 1. [Kubernetes CLI](https://kubernetes.io/docs/tasks/tools/install-kubectl/)<br/>
 1. [AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-install.html)<br/>
-1. [Create your Amazon EKS Service Role]
 
 
 # Follow the steps in this link to create EKS Service role and AWS config,
