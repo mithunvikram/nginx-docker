@@ -14,13 +14,47 @@
 1. [AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-install.html)<br/>
 1. [Create your Amazon EKS Service Role]
 
-Create your Amazon EKS Service Role
+# Create your Amazon EKS Service Role
 To create your Amazon EKS service role in the IAM console,
 
-1.Open the IAM console at https://console.aws.amazon.com/iam/. <br/>
-2.Choose Roles, then Create role.<br/>
+1.Open the IAM console at https://console.aws.amazon.com/iam/. 
+2.Choose Roles, then Create role.
 3.Choose EKS from the list of services, then Allows Amazon EKS to manage your clusters on your behalf for your use case, then     Next: Permissions.<br/>
 4.Choose Next: Review.<br/>
 5.For Role name, enter a unique name for your role, such as eksServiceRole, then choose Create role.<br/>
+
+# Create your Amazon EKS Cluster VPC
+To create your cluster VPC <br/>
+Open the AWS CloudFormation console at https://console.aws.amazon.com/cloudformation.
+
+From the navigation bar, select a Region that supports Amazon EKS.
+
+Note
+
+Amazon EKS is available in the following Regions at this time:
+
+US West (Oregon) (us-west-2)
+
+US East (N. Virginia) (us-east-1)
+
+US East (Ohio) (us-east-2)
+
+EU (Frankfurt) (eu-central-1)
+
+EU (Stockholm) (eu-north-1)
+
+EU (Ireland) (eu-west-1)
+
+Asia Pacific (Tokyo) (ap-northeast-1)
+
+Asia Pacific (Singapore) (ap-southeast-1)
+
+Asia Pacific (Sydney) (ap-southeast-2)
+
+Choose Create stack.
+
+For Choose a template, select Specify an Amazon S3 template URL.
+
+Paste the following URL into the text area and choose Next:
 
 
