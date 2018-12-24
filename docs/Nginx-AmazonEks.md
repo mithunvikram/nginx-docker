@@ -71,7 +71,23 @@
    The kubectl binary is available in many operating system package managers, and this option is often much easier than a manual download and install process. You can follow the instructions for your specific operating system or package manager in the Kubernetes documentation to install.
    
    Amazon EKS also vends kubectl binaries that you can use that are identical to the upstream kubectl binaries with the same version. To install the Amazon EKS-vended binary for your operating system, see Installing kubectl.
+   
+# To install aws-iam-authenticator for Amazon EKS
 
+   Download and install the aws-iam-authenticator binary.
+   
+   Amazon EKS vends aws-iam-authenticator binaries that you can use, or you can use go get to fetch the binary from the AWS IAM Authenticator for Kubernetes project on GitHub for other operating systems.
+
+   To download and install the Amazon EKS-vended aws-iam-authenticator binary:
+   1.Download the Amazon EKS-vended aws-iam-authenticator binary from Amazon S3:
+
+        Linux: https://amazon-eks.s3-us-west-2.amazonaws.com/1.11.5/2018-12-06/bin/linux/amd64/aws-iam-authenticator
+        MacOS: https://amazon-eks.s3-us-west-2.amazonaws.com/1.11.5/2018-12-06/bin/darwin/amd64/aws-iam-authenticator   
+        Windows: https://amazon-eks.s3-us-west-2.amazonaws.com/1.11.5/2018-12-06/bin/windows/amd64/aws-iam-authenticator.exe
+
+   Use the command below to download the binary, substituting the correct URL for your platform. The example below is for macOS clients.
+   
+        $curl -o aws-iam-authenticator https://amazon-eks.s3-us-west-2.amazonaws.com/1.11.5/2018-12-06/bin/darwin/amd64/aws-iam-authenticator
 
 
 
