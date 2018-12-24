@@ -100,6 +100,36 @@ For more information, see the help page with the aws eks update-kubeconfig help 
   2.Test your configuration.
   
      kubectl get svc
+     
+   # Step 3: Launch and Configure Amazon EKS Worker Nodes
+   
+   Now that your VPC and Kubernetes control plane are created, you can launch and configure your worker nodes.
+
+To launch your worker nodes
+
+   1.Wait for your cluster status to show as ACTIVE. If you launch your worker nodes before the cluster is active, the worker nodes will fail to register with the cluster and you will have to relaunch them.
+
+   2.Open the AWS CloudFormation console at https://console.aws.amazon.com/cloudformation.
+
+   3.From the navigation bar, select a Region that supports Amazon EKS
+   
+   4.Choose Create stack.
+
+   5.For Choose a template, select Specify an Amazon S3 template URL.
+
+   6.Paste the following URL into the text area and choose Next
+   
+    https://amazon-eks.s3-us-west-2.amazonaws.com/cloudformation/2018-12-10/amazon-eks-nodegroup.yaml
+    
+   7.On the Specify Details page, fill out the following parameters, and choose Next.
+   
+   8.On the Options page, you can choose to tag your stack resources. Choose Next.
+
+   9.On the Review page, review your information, acknowledge that the stack might create IAM resources, and then choose Create.
+
+   10.When your stack has finished creating, select it in the console and choose the Outputs tab.
+
+   11.Record the NodeInstanceRole for the node group that was created. You need this when you configure your Amazon EKS worker nodes
 
 
 
