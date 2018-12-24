@@ -25,6 +25,7 @@
 
 # Create your Amazon EKS Cluster VPC
    To create your cluster VPC 
+   
       1.Open the AWS CloudFormation console at https://console.aws.amazon.com/cloudformation.
       2.From the navigation bar, select a Region that supports Amazon EKS.
       Note:
