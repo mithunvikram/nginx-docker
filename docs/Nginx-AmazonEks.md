@@ -153,3 +153,11 @@ To launch your worker nodes
           groups:
             - system:bootstrappers
             - system:nodes
+            
+   c.Apply the configuration. This command may take a few minutes to finish.
+   
+      kubectl apply -f aws-auth-cm.yaml
+      
+   2.Watch the status of your nodes and wait for them to reach the Ready status.
+   
+      kubectl get nodes --watch
