@@ -19,7 +19,7 @@ To create your Amazon EKS service role in the IAM console,
 
 1.Open the IAM console at https://console.aws.amazon.com/iam/. 
 2.Choose Roles, then Create role.
-3.Choose EKS from the list of services, then Allows Amazon EKS to manage your clusters on your behalf for your use case, then     Next: Permissions.<br/>
+3.Choose EKS from the list of services, then Allows Amazon EKS to manage your clusters on your behalf for your use case, thenNext: Permissions.<br/>
 4.Choose Next: Review.<br/>
 5.For Role name, enter a unique name for your role, such as eksServiceRole, then choose Create role.<br/>
 
@@ -28,7 +28,7 @@ To create your cluster VPC
 1.Open the AWS CloudFormation console at https://console.aws.amazon.com/cloudformation.
 1.From the navigation bar, select a Region that supports Amazon EKS.
   Note:
-   Amazon EKS is available in the following Regions at this time:
+  Amazon EKS is available in the following Regions at this time:
    US West (Oregon) (us-west-2)
    US East (N. Virginia) (us-east-1)
    US East (Ohio) (us-east-2)
