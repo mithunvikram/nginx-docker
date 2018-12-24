@@ -64,22 +64,27 @@
    
    Amazon EKS also vends kubectl binaries that you can use that are identical to the upstream kubectl binaries with the same version. To install the Amazon EKS-vended binary for your operating system, see Installing kubectl.
    
-# To install aws-iam-authenticator for Amazon EKS
+# Step 1: Create Your Amazon EKS Cluster
 
-   Download and install the aws-iam-authenticator binary.
+   1.Open the Amazon EKS console at https://console.aws.amazon.com/eks/home#/clusters.
+   2.Choose Create cluster.
+   3.On the Create cluster page, fill in the following fields and then choose Create:
+
+      Cluster name: A unique name for your cluster.
+      Kubernetes version: The version of Kubernetes to use for your cluster. By default, the latest available version is selected.
+      Role ARN: Select the IAM role that you created with Create your Amazon EKS Service Role.
+      VPC: The VPC you created with Create your Amazon EKS Cluster VPC. You can find the name of your VPC in the drop-down list.
+      Subnets: The SubnetIds values (comma-separated) from the AWS CloudFormation output that you generated with Create your Amazon EKS Cluster VPC. By default, the available subnets in the above VPC are preselected.
+      Security Groups: The SecurityGroups value from the AWS CloudFormation output that you generated with Create your Amazon EKS Cluster VPC. This security group has ControlPlaneSecurityGroup in the drop-down name.
+      
+   4.On the Clusters page, choose the name of your newly created cluster to view the cluster information.
+   5.The Status field shows CREATING until the cluster provisioning process completes.
    
-   Amazon EKS vends aws-iam-authenticator binaries that you can use, or you can use go get to fetch the binary from the AWS IAM Authenticator for Kubernetes project on GitHub for other operating systems.
+ # To create your cluster with the AWS CLI
 
-   To download and install the Amazon EKS-vended aws-iam-authenticator binary:
-   1.Download the Amazon EKS-vended aws-iam-authenticator binary from Amazon S3:
-
-   Linux: [https://amazon-eks.s3-us-west-2.amazonaws.com/1.11.5/2018-12-06/bin/linux/amd64/aws-iam-authenticator](https://amazon-eks.s3-us-west-2.amazonaws.com/1.11.5/2018-12-06/bin/linux/amd64/aws-iam-authenticator)
-   MacOS: [https://amazon-eks.s3-us-west-2.amazonaws.com/1.11.5/2018-12-06/bin/darwin/amd64/aws-iam-authenticator](https://amazon-eks.s3-us-west-2.amazonaws.com/1.11.5/2018-12-06/bin/darwin/amd64/aws-iam-authenticator)   
-   Windows: [https://amazon-eks.s3-us-west-2.amazonaws.com/1.11.5/2018-12-06/bin/windows/amd64/aws-iam-authenticator.exe]()
-
-   Use the command below to download the binary, substituting the correct URL for your platform. The example below is for macOS clients.
-   
-        $curl -o aws-iam-authenticator https://amazon-eks.s3-us-west-2.amazonaws.com/1.11.5/2018-12-06/bin/darwin/amd64/aws-iam-authenticator
+   Create your cluster with the following command. Substitute your cluster name, the Amazon Resource Name (ARN) of your Amazon EKS service role that you created in Create your Amazon EKS Service Role, and the subnet and security group IDs for the VPC that you created in Create your Amazon EKS Cluster VPC.
+     
+    aws eks create-cluster --name devel --role-arn arn:aws:iam::111122223333:role/eks-service-role-AWSServiceRoleForAmazonEKS-EXAMPLEBKZRQR --resources-vpc-config subnetIds=subnet-a9189fe2,subnet-50432629,securityGroupIds=sg-f5c54184
 
 
 
