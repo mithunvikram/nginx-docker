@@ -6,7 +6,7 @@
 # Content
 1. [Prerequisites](#prerequisites)
 1. [Kubernetes Setup in AWS](#kubernetes-setup-in-aws)
-1. [Nginx with Amazon EKS](#nginx-with-amazon-eks)
+1. [Nginx in Amazon EKS](#nginx-in-amazon-eks)
 
 # Prerequisites
 1. [Docker](https://docs.docker.com/install/)<br/>
@@ -162,7 +162,7 @@ To launch your worker nodes
       kubectl get nodes --watch
       
       
-# Nginx with Amazon Eks
+# Nginx in Amazon Eks
   
    Make sure you have pushed your docker image of nginx with your app in Docker hub.Login to your ec2 instance with pem file through ssh.
     Create a [nginx-deployment.yaml](https://github.com/mithunvikram/nginx-docker/blob/master/docs/nginx-deployment.yaml) file, Let’s install the just created deployment into our Kubernetes cluster by using the specified command:
