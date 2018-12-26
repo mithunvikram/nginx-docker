@@ -1,18 +1,21 @@
 ![Logo](https://github.com/mithunvikram/nginx-docker/blob/master/docs/GeppettoIcon.png?raw=true"Logo")
 
 # Nginx with Amazon Eks<br/>
-   In here we will see how to containerized Nginx is setup on Top of a Kubernetes Cluster.
+   In here we will see how to setup Nginx in Amazon elastic container service(EKS) for Kubernetes.
    
 # Content
 1. [Prerequisites](#prerequisites)
 1. [Kubernetes Setup in AWS](#kubernetes-setup-in-aws)
-1. [Nginx in AWS EKS](#nginx-in-aws-eks)
+1. [Nginx with AWS EKS](#nginx-with-aws-eks)
 
 # Prerequisites
 1. [Docker](https://docs.docker.com/install/)<br/>
 1. [Kubernetes CLI](https://kubernetes.io/docs/tasks/tools/install-kubectl/)<br/>
 1. [AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-install.html)<br/>
 
+# Kubernetes setup in AWS
+
+  Here we will see how to setup kubernetes in aws
 
 # Follow the steps in this link to create Amazon EKS Service role and AWS config,
  
