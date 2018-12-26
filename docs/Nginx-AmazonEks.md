@@ -6,7 +6,7 @@
 # Content
 1. [Prerequisites](#prerequisites)
 1. [Kubernetes Setup in AWS](#kubernetes-setup-in-aws)
-1. [Nginx with AWS EKS](#nginx-with-amazon-eks)
+1. [Nginx with Amazon EKS](#nginx-with-amazon-eks)
 
 # Prerequisites
 1. [Docker](https://docs.docker.com/install/)<br/>
