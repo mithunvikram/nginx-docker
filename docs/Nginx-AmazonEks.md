@@ -5,8 +5,8 @@
    
 # Content
 1. [Prerequisites](#prerequisites)
-1. [Kubernetes Setup](#kubernetes-setup)
-1. [Nginx](#nginx-setup)
+1. [Kubernetes Setup in AWS](#kubernetes-setup-in-aws)
+1. [Nginx in AWS EKS](#nginx-in-aws-eks)
 
 # Prerequisites
 1. [Docker](https://docs.docker.com/install/)<br/>
@@ -22,27 +22,31 @@
 # Create your Amazon EKS Cluster VPC
    To create your cluster VPC 
    
-      1.Open the AWS CloudFormation console at https://console.aws.amazon.com/cloudformation.
-      2.From the navigation bar, select a Region that supports Amazon EKS.
-      3.Choose Create stack.
-      4.For Choose a template, select Specify an Amazon S3 template URL.
-      5.Paste the following URL into the text area and choose Next:
+   1.Open the AWS CloudFormation console at https://console.aws.amazon.com/cloudformation.
    
-    $ https://amazon-eks.s3-us-west-2.amazonaws.com/cloudformation/2018-12-10/amazon-eks-vpc-sample.yaml
+   2.From the navigation bar, select a Region that supports Amazon EKS.
+   
+   3.Choose Create stack.
+   
+   4.For Choose a template, select Specify an Amazon S3 template URL.
+   
+   5.Paste the following URL into the text area and choose Next:
+   
+     $ https://amazon-eks.s3-us-west-2.amazonaws.com/cloudformation/2018-12-10/amazon-eks-vpc-sample.yaml
     
-      6.On the Specify Details page, fill out the parameters accordingly, and then choose Next.
-         Stack name: Choose a stack name for your AWS CloudFormation stack. For example, you can call it eks-vpc.
-         VpcBlock: Choose a CIDR range for your VPC. You may leave the default value.
-         Subnet01Block: Choose a CIDR range for subnet 1. You may leave the default value.
-         Subnet02Block: Choose a CIDR range for subnet 2. You may leave the default value.
-         Subnet03Block: Choose a CIDR range for subnet 3. You may leave the default value.
+   6.On the Specify Details page, fill out the parameters, and then choose Next.
 
-       7.(Optional) On the Options page, tag your stack resources. Choose Next.
-       8.On the Review page, choose Create.
-       9.When your stack is created, select it in the console and choose Outputs.
-       10.Record the SecurityGroups value for the security group that was created. You need this when you create your EKS cluster; this security group is applied to the cross-account elastic network interfaces that are created in your subnets that allow the Amazon EKS control plane to communicate with your worker nodes.
-       11.Record the VpcId for the subnets that were created. You need this when you launch your worker node group template.
-       12.Record the SubnetIds for the subnets that were created. You need this when you create your EKS cluster; these are the subnets that your worker nodes are launched into.
+   7.(Optional) On the Options page, tag your stack resources. Choose Next.
+   
+   8.On the Review page, choose Create.
+   
+   9.When your stack is created, select it in the console and choose Outputs.
+   
+   10.Record the SecurityGroups value for the security group that was created. You need this when you create your EKS cluster; this security group is applied to the cross-account elastic network interfaces that are created in your subnets that allow the Amazon EKS control plane to communicate with your worker nodes.
+   
+   11.Record the VpcId for the subnets that were created. You need this when you launch your worker node group template.
+   
+   12.Record the SubnetIds for the subnets that were created. You need this when you create your EKS cluster; these are the subnets that your worker nodes are launched into.
        
 # To install kubectl for Amazon EKS
 
