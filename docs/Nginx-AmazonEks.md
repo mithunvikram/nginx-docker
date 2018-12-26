@@ -19,7 +19,7 @@
 
 # Follow the steps in this link to create Amazon EKS Service role and AWS config,
  
-   https://docs.aws.amazon.com/eks/latest/userguide/getting-started.html
+    $ https://docs.aws.amazon.com/eks/latest/userguide/getting-started.html
 
 
 # Create your Amazon EKS Cluster VPC
