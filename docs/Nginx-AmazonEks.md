@@ -165,13 +165,13 @@ To launch your worker nodes
 # Nginx in Amazon Eks
   
    Make sure you have pushed your docker image of nginx with your app in Docker hub.Login to your ec2 instance with pem file through ssh.
-    Create a [nginx-deployment.yaml](https://github.com/mithunvikram/nginx-docker/blob/master/docs/nginx-deployment.yaml) file, Let’s install the just created deployment into our Kubernetes cluster by using the specified command:
+    Create a [nginx-deployment.yaml](https://github.com/mithunvikram/nginx-docker/blob/master/docs/nginxeks-service.yaml) file, Let’s install the just created deployment into our Kubernetes cluster by using the specified command:
   
      $ kubectl apply -f nginx-deployment.yaml
      
   In addition to pod creation via deployment, we need to create the Nginx service. The reason behind this is simple. To       interact with a pod inside the Kubernetes cluster   
   
-  Create a [nginx-service.yaml](https://github.com/mithunvikram/nginx-docker/blob/master/docs/nginx-service.yaml) file,  you can run it inside the Kubernetes container by using this command:
+  Create a [nginx-service.yaml](https://github.com/mithunvikram/nginx-docker/blob/master/docs/nginxeks-service.yaml) file,  you can run it inside the Kubernetes container by using this command:
       
      $ kubectl apply -f nginx-service.yaml
      
