@@ -180,3 +180,5 @@ To launch your worker nodes
      $ kubectl get services -o wide
 
 After your external IP address is available, point a web browser to that address at port 80 to view your nginx. For example, http://a7a95c2b9e69711e7b1a3022fdcfdf2e-1985673473.us-west-2.elb.amazonaws.com:80
+
+![Image1](https://github.com/mithunvikram/nginx-docker/blob/master/docs/Selection_007.png?raw=true"Image1")
